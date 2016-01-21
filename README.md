@@ -7,15 +7,20 @@ Visual Taipei
 1. 安裝 github
   * http://git-scm.com/download/mac
 
-2. 打開 Terminal (終端機)，在想要的地方執行 git clone git@github.com:xxxxxx。執行完之後會看到裡面多了一個資料夾叫 visual-taipei
-  * git clone 後面那一串網址，可以在這個頁面上方的 SSH 按鈕旁邊找到
+2. 打開 Terminal (終端機)，進到可以開始輸入指令的狀態時，會處在 /home 的資料夾，建議依序輸入以下指令：
+  * ```mkdir project```
+  * ```cd project```
+  * ```git clone https://github.com/wesley100002001/visual-taipei.git```
+    * 執行完之後會看到裡面多了一個資料夾叫 visual-taipei
 
-3. 進入 visual-taipei 資料夾裡，先輸入以下指令確認 python 版本：python --version。然後根據版本，輸入以下指令：
-  * Python 2
-      * python -m SimpleHTTPServer
+3. 進入 visual-taipei 資料夾裡，先輸入以下指令確認 python 版本
+  * python --version
 
-  * Python 3
-      * python3 -m http.server
+4. 然後根據版本，在 project 資料夾裡，輸入以下指令：
+  * Python 2.x
+      * ```python -m SimpleHTTPServer```
 
-4. 接著在瀏覽器打開：http://localhost:8000/，可以看到剛剛 clone 下來的檔案，直接點開 html 檔
-就可以看了。
+  * Python 3.x
+      * ```python3 -m http.server```
+
+4. 接著畫面會顯示```Serving HTTP on 0.0.0.0 port 8000 ...```，也就是 python 成功地架起了一個簡單的伺服器，網址叫「0.0.0.0」，port 為 8000，而這個網址又可稱為 localhost，所以我們在瀏覽器打開```http://localhost:8000/```，就可以連進這個伺服器，看到剛剛 clone 下來的檔案，接著直接點開 html 檔，就可以看到完整的地圖。
