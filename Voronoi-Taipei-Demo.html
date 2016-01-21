@@ -38,8 +38,8 @@
     map = L.mapbox.map('map', 'zetter.i73ka9hn')
       .fitBounds([[25.04 , 121.64], [25.02 , 121.52]]);
 
-    url = './bus.csv';
-    initialSelection = d3.set(['bus']);
+    url = './transportation.csv';
+    initialSelection = d3.set(['Bus', 'MRT']);
     voronoiMap(map, url, initialSelection);
   </script>
 </body>
